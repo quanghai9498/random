@@ -42,7 +42,7 @@ function playAudio(audioSrc) {
 // Hàm để đọc văn bản thành tiếng
 function speak(text) {
     const ttsAudio = document.getElementById("ttsAudio");
-    ttsAudio.src = 'https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(text)}&tl=vi&client=tw-ob';
+    ttsAudio.src = `https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(text)}&tl=vi&client=tw-ob`;
     ttsAudio.play();
 }
 
