@@ -65,7 +65,7 @@ function selectRandomStudent() {
     const numRemainingStudents = remainingStudents.length;
 
     // Bắt đầu chơi âm thanh nền
-    playAudio('sound/ok.mp3');
+    playAudio('ok.mp3');
 
     let startTime = Date.now();
     let timeoutId = 4000;
