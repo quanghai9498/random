@@ -1,0 +1,60 @@
+/* Tùy chỉnh giao diện */
+.student {
+    width: 215px; /* Độ rộng của mỗi học sinh */
+    height: 15px;
+    display: inline-block;
+    font-family: "Sofia", sans-serif;
+    font-size: 15.5px;
+    font-style: normal;
+    font-weight: bold;
+    margin-left: 10px;
+    color: #17107b;     //#a32882;
+     margin: 5px; /* Khoảng cách giữa các học sinh */
+    padding: 10px; /* Khoảng cách bên trong phần tử chứa tên học sinh */
+    border: 3px solid #ccc; /* Viền xung quanh tên học sinh */
+    background-color: lightskyblue; /* Màu nền của tên học sinh */
+    text-align: center; /* Căn giữa nội dung tên học sinh */
+}
+
+
+/* Hiệu ứng ánh sáng */
+.student.active {
+    background-color: lightpink;
+    animation: glow 0.5s alternate infinite;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px #FFD700;
+    }
+    100% {
+--
+}
+
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#image-container {
+    margin-right: 20px;
+}
+
+#image-container img {
+    width: 50px; /* Độ rộng mới của hình ảnh */
+    height: auto; /* Tự động tính độ cao dựa trên độ rộng */
+}
+
+#timer-container {
+    text-align: center;
+    border: 2px solid #333;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 100px;
+    height: 50px;
+}
